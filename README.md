@@ -46,6 +46,8 @@ Ray-casting allows us to find the intersection point between an origin point (th
 
 At any given time, one and only one of the vehicles currently in the environment may record the points where it is being observed by the recording camera, this is considered the _Target Vehicle_. In each Scenario, the rest of the spaces that are occupied by vehicles are all filled with Blocking Vehicles that use the same model as the Target Vehicle, but do not record any data.
 
+##
+
 # How to Use the Custom Road Simulation
 
 The geometry of the scene for the simulation is static and non-changing. This is a top-down view of it:
@@ -54,15 +56,11 @@ The geometry of the scene for the simulation is static and non-changing. This is
 
 You can change different parameters of the simulation you want to run, however. A custom simulation code is divided into 9 parts, separated by vertical bars, like this:
 
-| SMALL,US\|Carryall\|S_1,S_2,S_3\|1\|Carryall\|S_1,S_2,S_3,S_4\|A-1,2;B-1,2,3\|0\|5 |     |     |     |     |     |     |     |     |
-| --- |     |     |     |     |     |     |     |     | --- | --- | --- | --- | --- | --- | --- | --- |
-
-| a   | b   | c   | d   | e   | f   | g   | h   | i   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SMALL,US\| | Carryall\| | S_1,S_2,S_3\| | 1\| | Carryall\| | S_1,S_2,S_3,S_4\| | A-1,2;B-1,2,3\| | 0\| | 5 |
+|------------|------------|---------------|-----|------------|-------------------|-----------------|-----|---|
+|      a     |      b     |       c       |  d  |      e     |         f         |        g        |  h  | i |
 
 Each part is written into a separate field of the simulation options, seen in the following pages.
-
-##
 
 ## (a) Setup ID
 
@@ -79,39 +77,22 @@ These are the size categories for each vehicle type. It is not recommended to se
 | **Category** | **Vehicle Type** |
 | --- | --- |
 | SMALL | Motorcycle |
-| --- | --- |
 | SMALL | Smart Car |
-| --- | --- |
 | SMALL | Carryall Car |
-| --- | --- |
 | MEDIUM | Sedan |
-| --- | --- |
 | MEDIUM | SUV |
-| --- | --- |
 | MEDIUM | Panel Van |
-| --- | --- |
 | MEDIUM | Topless Convertible |
-| --- | --- |
 | MEDIUM | Station Wagon |
-| --- | --- |
 | LARGE | Four wheel Truck |
-| --- | --- |
 | LARGE | Minibus |
-| --- | --- |
 | LARGE | Pickup Truck |
-| --- | --- |
 | LARGE | Moving Truck |
-| --- | --- |
 | XLARGE | Motor home |
-| --- | --- |
 | XLARGE | Double Decker Bus |
-| --- | --- |
 | XLARGE | Single Decker Bus |
-| --- | --- |
 
-### 
-
-Driving Direction
+### Driving Direction
 
 This option is for selecting whether the vehicles are driving north on the right lane or the left lane. At the time of writing, the only available option is **US** for right-hand driving.
 
@@ -175,8 +156,6 @@ Based on the Peugeot J5
 
 ![](README/MinibusDemo7.png)
 
-###
-
 ### Four wheel Truck (**FourWheel**)
 
 Inspired by Japanese-made small-cabin commercial trucks from the 1990s.
@@ -194,8 +173,6 @@ Based on the 2015 Ford F150 King Ranch Edition
 Non real life counterpart. Based on Japanese-made 2-door pickup-cabin box trucks.
 
 ![](README/MovingTruckDemo7.png)
-
-###
 
 ### Motor home (**Motorhome**)
 
@@ -215,8 +192,6 @@ No specified real life counterpart.
 
 ![](README/SingleDeckerBusDemo7.png)
 
-##
-
 ## (c) Target Vehicle Positions
 
 Here you choose what positions you want to test the Target Vehicle in. You must list each position with a prefix corresponding to the _Position Distance_ selected in the _Setup ID_, separated by commas.
@@ -224,8 +199,6 @@ Here you choose what positions you want to test the Target Vehicle in. You must 
 ![](README/target_vehicle_positions.png)
 
 For example, if the distance is SMALL and the Target Vehicle may be found at position 3 and 5, then you should write "S_3,S_5"
-
-##
 
 ## (d) Number of Vehicles in Simulation
 
