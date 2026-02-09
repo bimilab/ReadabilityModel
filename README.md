@@ -96,8 +96,6 @@ These are the size categories for each vehicle type. It is not recommended to se
 
 This option is for selecting whether the vehicles are driving north on the right lane or the left lane. At the time of writing, the only available option is **US** for right-hand driving.
 
-##
-
 ## (b) Target Vehicle Model
 
 This lets you choose the 3D model of the vehicle used for the simulation, based on the type, by writing its keyword. Here is a list of every available vehicle type, the keyword to use it, and the vehicle it's based on:
@@ -214,7 +212,7 @@ Here you choose what positions the Blocking Vehicles may be in, using the same s
 
 ## (g) Camera Positions and Directions
 
-Here you chose what are the _Camera Positions_ and _Camera Directions_ for this _Simulation Run_. During the simulation, the program will take _Data Captures_ at each _Camera Position_ and _Camera Direction,_ at five different heights. The structure of each specified position and direction is "\[Camera Position\]-\[Camera Direction 1\],\[Camera Direction 2\],...", separated by semicolons (;).
+Here you chose what are the _Camera Positions_ and _Camera Directions_ for this _Simulation Run_. During the simulation, the program will take _Data Captures_ at each _Camera Position_ and _Camera Direction,_ at five different heights. The structure of each specified position and direction is "\[Camera Position 1\]-\[Camera Direction 1\],\[Camera Direction 2\];\[Camera Position 2\]-\[Camera Direction 3\]...", separated by semicolons (;).
 
 A Camera Position can be:
 
