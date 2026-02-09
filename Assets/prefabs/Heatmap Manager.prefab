@@ -90,29 +90,31 @@ MonoBehaviour:
   particleSize: 0.1
   particleSpacing: 0.03
   particleMaterial: {fileID: 2100000, guid: 6d16e3e5b0cfb32409b3ade9bd343f78, type: 2}
+  renderMode: 0
+  renderFilter: {fileID: 0}
   minVisibleHeat: 0
   maxVisibleHeat: 2100000000
   useHighestValueFound: 1
   valueEvaluationMode: 0
   heatmapColors:
     serializedVersion: 2
-    key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 0, g: 0.29680824, b: 1, a: 1}
-    key2: {r: 0.5524683, g: 0, b: 1, a: 0}
-    key3: {r: 0, g: 1, b: 0, a: 0}
+    key0: {r: 0, g: 0, b: 0, a: 0.29411766}
+    key1: {r: 0, g: 0, b: 1, a: 1}
+    key2: {r: 0.47450984, g: 0, b: 1, a: 0}
+    key3: {r: 0.52156866, g: 0.9960785, b: 0.03137255, a: 0}
     key4: {r: 1, g: 0, b: 1, a: 0}
-    key5: {r: 1, g: 0.53333336, b: 0, a: 0}
-    key6: {r: 1, g: 1, b: 0, a: 0}
+    key5: {r: 1, g: 1, b: 0, a: 0}
+    key6: {r: 0, g: 1, b: 1, a: 0}
     key7: {r: 1, g: 0, b: 0, a: 0}
     ctime0: 8192
     ctime1: 16384
-    ctime2: 24576
+    ctime2: 24601
     ctime3: 32768
-    ctime4: 40480
+    ctime4: 40959
     ctime5: 49151
-    ctime6: 56965
+    ctime6: 57343
     ctime7: 65535
-    atime0: 0
+    atime0: 8192
     atime1: 65535
     atime2: 0
     atime3: 0

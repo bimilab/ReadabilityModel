@@ -18,6 +18,8 @@ public class VehicleDataDisplayManager : MonoBehaviour
     public bool hideMeshesInPhotography;
     public bool centerMesh;
 
+    public Gradient[] gradientOptions;
+
     public UnityEvent OnDisplayStart;
     public UnityEvent OnDisplayEnd;
 
@@ -37,13 +39,14 @@ public class VehicleDataDisplayManager : MonoBehaviour
         fileName = to; 
     }
 
-    public IEnumerator RefreshHeatmapDisplay(long minValue, long maxValue, int evaluationMode)
+    public IEnumerator RefreshHeatmapDisplay(long minValue, long maxValue, int evaluationMode, int gradientSelection)
     {
         OnStartColorChange.Invoke();
 
         ActiveTarget.HeatmapDisplay.SetMinVisibleHeat(minValue);
         ActiveTarget.HeatmapDisplay.SetMaxVisibleHeat(maxValue);
         ActiveTarget.HeatmapDisplay.SetEvaluationMode(evaluationMode);
+        ActiveTarget.HeatmapDisplay.SetGradient(gradientOptions[gradientSelection]);
 
         yield return ActiveTarget.HeatmapDisplay.DisplayHeatmap();
 
