@@ -70,7 +70,7 @@ Following the structure "\[Position Distance,\[Driving Direction\]". This part i
 
 This determines the spacing between vehicle positions on the scene, as seen below. The available options are **SMALL**, **MEDIUM**, **LARGE**, and **XLARGE**. The spacing between positions is universal, and used by both the Target Vehicle and Blocking Vehicles, regardless of the vehicles used.
 
-![](README/Experiment_Diagram_Long.png)
+![](README/layouts.png)
 
 These are the size categories for each vehicle type. It is not recommended to select a Position Distance smaller than the size of the selected Target Vehicle or Blocking Vehicle model:
 
