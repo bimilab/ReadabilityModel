@@ -1,6 +1,6 @@
 # What is this?
 
-This application allows you to simulate the visibility of up to fifteen different vehicles in a variety of position and camera configurations.
+This application allows you to simulate the granular exposedness of up to fifteen different vehicles in a variety of position and camera configurations.
 
 # How to run it?
 
@@ -19,7 +19,7 @@ The highest level, where the user provides the program with the parameters that 
 - The driving direction of the road.
 - The type of vehicle used.
 - The set of _Camera Positions_ that will be used to capture the information, along with the possible _Camera Directions_ that may be used at each.
-- The positions that the _Target Vehicle_ may occupy. This is the vehicle that is being measured, where the visibility of the camera is projected on.
+- The positions that the _Target Vehicle_ may occupy. This is the vehicle that is being measured, where the exposedness of its elements to the camera is projected.
 - The positions that the _Blocking Vehicles_ may occupy. These are other vehicles placed on the scene that do not record data, and only exist to block the view of the _Target Vehicle_ from the camera.
 - The number of vehicles in the scenario, including the _Target Vehicle_ and _Blocking Vehicles_. There will always be one and only one _Target Vehicle_ in any given simulation. There may never be more _Blocking Vehicles_ in the road than there are positions for it.
 - The minimum and maximum distance that a point on the _Target Vehicle_ may be from the camera for it to be recorded.
